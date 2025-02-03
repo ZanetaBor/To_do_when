@@ -39,24 +39,12 @@
     "id": 1737022801238,
     "title": "Persisted Task",
     "dateAdded": "2025-01-16T10:20:01.238Z",
-    "completed": false
-  },
-  {
-    "id": 1737022801945,
-    "title": "Persistent Task",
-    "dateAdded": "2025-01-16T10:20:01.945Z",
-    "completed": false
+    "completed": true
   },
   {
     "id": 1737022802763,
     "title": "Task to Complete",
     "dateAdded": "2025-01-16T10:20:02.763Z",
-    "completed": false
-  },
-  {
-    "id": 1737022803573,
-    "title": "Task to Uncheck",
-    "dateAdded": "2025-01-16T10:20:03.573Z",
     "completed": false
   },
   {
