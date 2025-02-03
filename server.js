@@ -42,7 +42,7 @@ const server = http.createServer(async (req, res) => {
 
     else if (req.method === 'GET') {
         if (req.url === '/' || req.url === '/index.html') {
-            const filePath = path.join(__dirname,  'public', 'index.html');
+            const filePath = path.join(__dirname,  'docs', 'index.html');
             fs.readFile(filePath, (err, content) => {
                 if (err) {
                     res.writeHead(500, { 'Content-Type': 'text/html' });
@@ -93,7 +93,7 @@ const server = http.createServer(async (req, res) => {
                 res.end(JSON.stringify({ error: 'Internal Server Error' }));
             }
         } else {
-            const filePath = path.join(__dirname,  'public', req.url);
+            const filePath = path.join(__dirname,  'docs', req.url);
             const extname = path.extname(filePath);
             let contentType = 'text/html';
 
@@ -121,7 +121,7 @@ const server = http.createServer(async (req, res) => {
             fs.readFile(filePath, (err, content) => {
                 if (err) {
                     if (err.code == 'ENOENT') {
-                        fs.readFile(path.join(__dirname,  'public', '404.html'), (err, content) => {
+                        fs.readFile(path.join(__dirname,  'docs', '404.html'), (err, content) => {
                             res.writeHead(404, { 'Content-Type': 'text/html' });
                             res.end(content, 'utf-8');
                         });
