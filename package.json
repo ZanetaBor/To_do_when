@@ -1,0 +1,27 @@
+{
+  "name": "to_do_when",
+  "version": "1.0.0",
+  "description": "My to do app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZanetaBor/To_do_when.git"
+  },
+  "author": "ZanWeb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZanetaBor/To_do_when/issues"
+  },
+  "homepage": "https://github.com/ZanetaBor/To_do_when#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
